@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardioLog - Your Echocardiography Record Management System </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.5s ease, color 0.5s ease; /* Added transition */
+        }
+
+        main.dark-mode {
+            background-color: #444;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #0056b3;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #004080;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CardioLog - Your Echocardiography Record Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="http://146.59.95.148:8080/">Documentation</a></li>
+                <li><a href="http://146.59.95.148:8080/">Wiki</a></li>
+                <li><a href="http://146.59.95.148:8080/">Ticket System (Redmine)</a></li>
+            </ul>
+        </nav>
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            🌙
+        </div>
+    </header>
+   <main>
+    <section id="about">
+        <h2>About CardioLog</h2>
+        <p>Welcome to CardioLog - Your Echocardiography Record Management System. CardioLog is a comprehensive software solution designed to streamline the management of echocardiography records for medical practices and clinics. Our team is dedicated to developing cutting-edge applications tailored specifically for cardiologists.</p>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Efficient recording and storage of patient echocardiography data</li>
+            <li>User-friendly interface for easy navigation and data entry</li>
+            <li>Secure access controls to protect patient privacy</li>
+          </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about CardioLog or would like to learn more about our software solutions, please don't hesitate to contact us.</p>
+        <p>Email: <a href="mailto:arek@wilamowski.net">arek@wilamowski.net</a></p>
+        <p>Phone: 1-800-CARDIOLOG</p>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2024 CardioLog - All Rights Reserved</p>
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('main').classList.toggle('dark-mode'); // Toggle dark mode for main content
+        }
+    </script>
+</body>
+</html>

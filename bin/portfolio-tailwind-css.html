@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Linking to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Adding Google Fonts: Cormorant-Garamond and Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Adding Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .navbar {
+            background-color: #4a5568; /* Tailwind CSS color */
+        }
+        /* Add more custom styles as needed */
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar using Tailwind CSS classes -->
+    <nav class="navbar">
+        <div class="container mx-auto px-4 py-2">
+            <span class="text-white font-bold">Portfolio</span>
+        </div>
+    </nav>
+
+    <!-- Main content section -->
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4 fade-in">Welcome to my IT portfolio!</h1>
+        <p class="text-lg mb-8 fade-in">My areas of interest are Java stack and Data processing. I particularly enjoy the combination of these interests.</p>
+        
+        <!-- Java Developer projects section -->
+        <section id="java" class="mb-8 fade-in">
+            <h2 class="text-2xl font-bold mb-4">JAVA PORTFOLIO</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Card for Java section -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 w-full sm:w-1/2">
+                    <div class="px-6 py-4">
+                        <i class="fas fa-cloud text-3xl text-gray-500 mb-4"></i>
+                        <div class="mb-2 text-xl font-bold">CardioLog - Electronic Health Record application for medicine</div>
+                        <p class="text-gray-700 text-base mb-2">This is a classic JavaFX application with a modern approach for UI/UX.</p>
+                        <ul class="list-disc ml-6">
+                            <li>Complex echocardiography form with calculations</li>
+                            <li>Switchable, extendable - Abstract Model & Persistence Layer</li>
+                            <li>PDF Printer Service</li>
+                            <li>...and more!</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="http://146.59.95.148/med/" target="_blank" class="inline-block px-4 py-2 bg-blue-500 text-white font-bold rounded">Check the Java Project</a>
+                        </div>
+                        <p class="mt-2">PS Need credentials? Contact me on LinkedIn :)</p>
+                    </div>
+                </div>
+                <!-- Empty card for layout -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 w-full sm:w-1/2">
+                    <div class="px-6 py-4">
+                        <i class="fas fa-cloud text-transparent text-3xl mb-4"></i>
+                        <div class="mb-2 bg-gray-200 h-6 w-2/3"></div>
+                        <div class="mb-2 bg-gray-200 h-4 w-1/2"></div>
+                        <div class="mb-2 bg-gray-200 h-4 w-1/3"></div>
+                        <div class="mb-2 bg-gray-200 h-4 w-2/3"></div>
+                        <div class="mb-2 bg-gray-200 h-6 w-3/4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Data Engineer projects section -->
+        <section id="data" class="mb-8 fade-in">
+            <h2 class="text-2xl font-bold mb-4">DATA PORTFOLIO</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <!-- Card for Data section -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 w-full sm:w-1/2">
+                    <div class="px-6 py-4">
+                        <i class="fas fa-cloud text-3xl text-gray-500 mb-4"></i>
+                        <p class="text-gray-700 text-base mb-2">The central repository where structured and organized data is stored for analytical purposes.</p>
+                        <div class="mt-4">
+                            <a href="http://146.59.95.148/data/" target="_blank" class="inline-block px-4 py-2 bg-blue-500 text-white font-bold rounded">Check the Data Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Empty card for layout -->
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 w-full sm:w-1/2">
+                    <div class="px-6 py-4">
+                        <i class="fas fa-cloud text-transparent text-3xl mb-4"></i>
+                        <div class="mb-2 bg-gray-200 h-6 w-2/3"></div>
+                        <div class="mb-2 bg-gray-200 h-4 w-1/2"></div>
+                        <div class="mb-2 bg-gray-200 h-4 w-1/3"></div>
+                        <div class="mb-2 bg-gray-200 h-4 w-2/3"></div>
+                        <div class="mb-2 bg-gray-200 h-6 w-3/4"></div>
+                    </div>
+                </div>
+            </div>
+        </
